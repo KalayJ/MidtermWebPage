@@ -1,0 +1,203 @@
+
+/* General page style settings */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #e3ccc8;
+    font-weight: bolder;
+    font-size: 20px;
+}
+/* Top part of the page */
+header {
+    
+    background-color: #e3ccc8;
+    padding: 20px;
+    text-align: center;
+    color:#040D12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+/* General style settings for bottom boxes */
+.bottom-box {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-basis: calc(33.33% - 2%);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    max-width: 30%;
+    max-height: 30%;
+    display: flex;
+    font-size: 20px;
+    color: #170f0f;
+    font-weight: bold;
+    display: inline-block;
+    
+
+
+
+}
+/* Container for the page content */
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Main content container */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -2%; 
+}
+/* Centered content container with background image */
+.center-content {
+    background-image: url(background.jpeg);
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    background-size: contain;
+    opacity: 0.7;
+    padding: 20px; 
+    border-radius: 15px; 
+    margin: 0 1% 20px 1%; 
+    flex-basis: calc(33.33% - 0%);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+/* Left and right sidebar content containers with background image */
+.left-sidebar,  .right-sidebar {
+    background-image: url(background.jpeg);
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    background-size: contain;
+    flex-basis: calc(33.33% - 2%);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+/* Common style properties (left, right, and bottom boxes) */
+.left-sidebar, .right-sidebar, .bottom-box {
+    border-radius: 5px;
+    background-color: #7a6868;
+    padding: 100px;
+    
+}
+
+
+/* Box contents */
+.box, .big-box, .bottom-box {
+    font-size: 25px; 
+    margin-top: 10px;
+    background-color: #A68D88;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+/* Images inside the boxes */
+.box img,.big-box img {
+    max-width: 100%; 
+    max-height: 50px; 
+    width: auto; 
+    height: auto; 
+    border-radius: 45px;
+    
+}
+/* Images inside the bottom box */
+.bottom-box img {
+    max-width: 100%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+    
+}
+
+/* Big box contents */
+.big-box {
+    background-color: #A68D88;
+    padding: 20px;
+    border-radius: 45px;
+    text-align: center;
+    
+}
+/* Text style properties */
+.text{
+    
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    color: #170f0f;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 1;
+    text-shadow: 2px 2px 4px rgba(86, 48, 48, 0.5);
+    
+    
+    
+    
+}
+/* Colored span inside the text */
+.text2 span {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #00cc00;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 1;
+    background-color:#e3ccc8
+    
+    
+
+}
+/* Right-aligned colored span */
+.text2 span:nth-child(2){
+    float: right;
+    color: #000;
+    font-size: 10px;
+}
+/* Colored span inside the text */
+.text3 span{
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: rgb(204, 0, 0);
+    font-weight: bold;
+    display: inline-block;
+    line-height: 1;
+    background-color:#e3ccc8
+
+}
+/* Right-aligned colored span */
+.text3 span:nth-child(2){
+    float: right;
+    color: #000;
+    font-size: 10px;
+}
+
+/* Bottom part of the page (footer) */
+footer {
+    background-color: #A68D88;
+    color: rgb(10, 2, 2);
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 900px) {
+    .left-sidebar, .center-content, .right-sidebar, .bottom-box {
+        flex-basis: calc(50% - 2px);
+    }
+}
+
+@media (max-width: 600px) {
+    .left-sidebar, .center-content, .right-sidebar, .bottom-box {
+        flex-basis: 100%;
+    }
+}
